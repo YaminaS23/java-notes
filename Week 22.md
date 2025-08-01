@@ -278,7 +278,7 @@ if (condition) {
 
 ## 💸 Real-Life Scenario: Bank Balance Transfer
 
-### 🧑‍💻 Code Example 1: Bank Transfer Logic
+### 🧑‍💻 Code Example: Bank Transfer Logic
 
 ```java
 public class BankTransfer {
