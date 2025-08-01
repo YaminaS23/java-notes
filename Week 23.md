@@ -129,7 +129,7 @@ else {
 }
 ```
 
-### 👾 Example with Compound Statements
+## 👾 Example with Compound Statements
 
 ```java
 if (balance >= 0) {
@@ -142,6 +142,33 @@ else {
 }
 ```
 
+```java
+public class BankDemo {
+    public static void main(String[] args) {
+        final double INTEREST_RATE = 0.06;
+        final double OVERDRAWN_PENALTY = 35.00;
+        double balance = -50.00;
+
+        if (balance >= 0) {
+            System.out.println("Good for you. You earned interest.");
+            balance = balance + (INTEREST_RATE * balance) / 12;
+        } else {
+            System.out.println("You will be charged a penalty.");
+            balance = balance - OVERDRAWN_PENALTY;
+        }
+        System.out.println("Balance: $" + balance);
+    }
+}
+```
+
+**Expected Output:**
+
+```
+You will be charged a penalty.
+Balance: $-85.0
+```
+
+> 🎮 **Real-World Use Case:** Useful for bank apps, wallet apps, game economy management, etc., where multiple actions must run on a single check!
 
 ---
 
