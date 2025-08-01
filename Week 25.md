@@ -217,6 +217,74 @@ public class NestedIfDemo {
 a: 1, c: 3
 ```
 
+## 🧩 Step-by-Step Execution
+
+### 1️⃣ **Variable Initialization**
+
+- `i = 10`
+    
+- `j = 15`
+    
+- `k = 200`
+    
+- `a = 0`, `b = 1`, `c = 2`, `d = 3`
+    
+
+> **All variables are set before any logic runs!**
+
+---
+
+### 2️⃣ **First** `if(i == 10)`
+
+- Condition: `i == 10` → `10 == 10` → `true`
+    
+- **Enters the first if block!**
+    
+
+---
+
+### 3️⃣ **Second** `if(j < 20)`
+
+- Condition: `j < 20` → `15 < 20` → `true`
+    
+- Runs `a = b;` → `a` now equals `1`.
+    
+
+---
+
+### 4️⃣ **Third** `if(k > 100)` **with** `else`
+
+- Condition: `k > 100` → `200 > 100` → `true`
+    
+- Runs `c = d;` → `c` now equals `3`.
+    
+- The `else` part is SKIPPED because the `if` was true.
+    
+
+> ⚠️ **Java Rule:** The `else` matches with the closest previous unmatched `if` within the same block. Here, `else a = c;` matches with `if(k > 100)`, NOT `if(j < 20)`.
+
+---
+
+### 5️⃣ **The Outer** `else`
+
+- Not run! Because the first `if(i == 10)` was true, so `else a = d;` is IGNORED.
+    
+
+---
+
+### 6️⃣ **Print Statement**
+
+- Prints current `a` and `c` values:
+    
+    - `a: 1`
+        
+    - `c: 3`
+        
+
+```
+a: 1, c: 3
+```
+
 ---
 
 ## 📚 Examples of Nested Structures
