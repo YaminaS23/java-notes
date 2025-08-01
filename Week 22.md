@@ -186,6 +186,15 @@ Good Bye!
 
 ## 🧠 Real-World Use Case: Data Validation with `if`
 
+### 🔄 `setNumberOfShares` Method
+
+### 📝 **Theory & Use Case**
+
+- Ensures the **number of shares can never be negative or zero** in your code logic (e.g., a stock trading app).
+    
+- Good for **data validation**—stops weird bugs & data corruption!
+
+
 ### 🧾 Original Code:
 
 ```java
@@ -269,6 +278,46 @@ if (condition) {
 
 ## 💸 Real-Life Scenario: Bank Balance Transfer
 
+### 🧑‍💻 Code Example 1: Bank Transfer Logic
+
+```java
+public class BankTransfer {
+    public static void main(String[] args) {
+        double savingsBalance = 2500.0;
+        double checkingBalance = 400.0;
+        final double MINIMUM_BALANCE = 500.00;
+        final double TRANSFER_AMT = 1000.00;
+
+        System.out.println("Initial Balances:");
+        System.out.println("Savings: $" + savingsBalance);
+        System.out.println("Checking: $" + checkingBalance);
+
+        if (checkingBalance <= MINIMUM_BALANCE) {
+            savingsBalance = savingsBalance - TRANSFER_AMT;
+            checkingBalance = checkingBalance + TRANSFER_AMT;
+        }
+
+        System.out.println("\nAfter Transfer:");
+        System.out.println("Savings: $" + savingsBalance);
+        System.out.println("Checking: $" + checkingBalance);
+    }
+}
+```
+
+#### **Expected Output:**
+
+```
+Initial Balances:
+Savings: $2500.0
+Checking: $400.0
+
+After Transfer:
+Savings: $1500.0
+Checking: $1400.0
+```
+
+> 🧾 **Explanation:** Both statements (withdrawing and depositing) only run if the balance is at or below the minimum.
+
 ```java
 final double MINIMUM_BALANCE = 500.00;
 final double TRANSFER_AMT = 1000.00;
@@ -300,24 +349,24 @@ if (checkingBalance < 300.00) {
 
 | ❗ Error # | Description                         | Example                  |
 | --------- | ----------------------------------- | ------------------------ |
-| 4.2       | $=$ instead of $==$ or `<`, `<=`    | `if (x = 5)` ❌           |
-| 4.3       | Missing parentheses                 | `if x < 10` ❌            |
-| 4.4       | Semicolon after `if`                | `if (x < 10);` ❌         |
-| 4.5       | Misplaced statements (missing `{}`) | Only first line executes |
+| 1       | $=$ instead of $==$ or `<`, `<=`    | `if (x = 5)` ❌           |
+| 2       | Missing parentheses                 | `if x < 10` ❌            |
+| 3       | Semicolon after `if`                | `if (x < 10);` ❌         |
+| 4       | Misplaced statements (missing `{}`) | Only first line executes |
 
 ---
 
 ## 🧠 Self-Check Questions Recap
 
-**Q17:** Rewrite `setNumberOfShares` method such that if number of shares < 1, set to 0 ✅
+**Q1:** Rewrite `setNumberOfShares` method such that if number of shares < 1, set to 0 ✅
 
-**Q18:** Replace `>=` with logically equivalent operator combination ✅
+**Q2:** Replace `>=` with logically equivalent operator combination ✅
 
-**Q19:** Can a block statement contain exactly one statement?
+**Q3:** Can a block statement contain exactly one statement?
 
 > ✅ Yes, but braces are **optional** in that case.
 
-**Q20:** Modify code to transfer only if checking account balance < 300 ✅
+**Q4:** Modify code to transfer only if checking account balance < 300 ✅
 
 ---
 
