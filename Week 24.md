@@ -121,7 +121,26 @@ This allows you to:
 - Replace `System.in` with `in`
     
 
+🎯 Benefit:
+
+```java
+out.println("Hello World"); // instead of System.out.println()
+```
+
+> 🧠 Pro Tip: Use this for cleaner code in long files, but avoid overusing for clarity's sake.
+
 > 🧠 This is a Java 5+ feature. Super useful in long code files.
+
+### When to Use:
+
+- When writing lots of `System.out.println()`
+    
+- For competitive programming or demos
+    
+
+### When NOT to Use:
+
+- In team projects (can reduce readability)
 
 ---
 
@@ -159,6 +178,14 @@ An offer just for you!
 1
 ```
 
+### 🔍 Breakdown:
+
+- `Random.nextInt(10) + 1` generates a number from **1 to 10**.
+    
+- If it lands on 7, Java prints the offer.
+    
+- Always prints the number so user can see the result.
+
 ---
 
 ## ⚾ Winner Display Example (if-else with multiple prints
@@ -181,7 +208,8 @@ public class TwoTeams {
         hankees = keyboard.nextInt();
         socks = keyboard.nextInt();
 
-        out.println();
+        out.println();  // print an empty line
+
         if (hankees > socks) {
             out.println("Hankees: " + hankees);
             out.println("Socks: " + socks);
@@ -194,6 +222,35 @@ public class TwoTeams {
     }
 }
 ```
+
+**Expected Output:**
+
+```
+Hankees and Socks scores? 8 5
+
+Hankees: 8
+Socks: 5
+```
+
+## 🧪 Test It Yourself:
+
+Try editing the scores:
+
+- 10 and 5 → Hankees wins
+    
+- 4 and 7 → Socks wins
+
+### 🔍 Breakdown:
+
+- Uses `Scanner` to get two inputs from the user.
+    
+- Uses `if-else` to compare which score is higher.
+    
+- The team with the higher score is displayed first.
+
+### 🤓 Why Static Import?
+
+Saves us from writing `System.out` and `System.in` repeatedly. Keeps code short & sweet.
 
 ---
 
