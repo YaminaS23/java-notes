@@ -198,6 +198,7 @@ Enter first name, last name and age : Chris Cox 57
 Joy Mathew and Chris Cox are of the same generation.
 ```
 
+
 ### 1️⃣ **Prompt for First Person's Details**
 
 ```java
@@ -214,6 +215,7 @@ ageOne = scannedInfo.nextInt();
  - `.nextInt()` reads the integer for age.
 >     
 
+
 ### 2️⃣  **Prompt for Second Person's Details**
 
 ```java
@@ -228,6 +230,7 @@ ageTwo = scannedInfo.nextInt();
  - Same process as above for the second person.
 >     
 
+
 ### 3️⃣ **Calculate Age Difference**
 
 ```java
@@ -241,6 +244,7 @@ ageDifference = Math.abs(ageTwo - ageOne);
  - This prevents negative results if, say, person 1 is older.
 >     
 
+
 ### 4️⃣ **Print Both Names Together**
 
 ```java
@@ -252,6 +256,7 @@ System.out.print(firstNameOne + " " + lastNameOne + " and " +
 > 
  - Concatenates the names for the output message.
 >     
+
 
 ### 5️⃣ **Check Generation and Print Result**
 
