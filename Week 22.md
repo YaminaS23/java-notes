@@ -91,7 +91,7 @@ flowchart TD
 
 ---
 
-## 🧪 Code Example: Uppercase Checker
+## 🧪 Code Example 1: Uppercase Checker
 
 ### 🧾 Program:
 
@@ -131,7 +131,7 @@ Good Bye!
 
 ---
 
-## 🧪 Code Example: Uppercase + Lowercase Checker
+## 🧪 Code Example 2: Uppercase + Lowercase Checker
 
 ### 🧾 Program:
 
@@ -181,6 +181,33 @@ Good Bye!
 ```
 Good Bye!
 ```
+
+
+## 1. **## Check if Uppercase**
+
+```java
+if (characterFound >= 'A' && characterFound <= 'Z')
+    System.out.println("The character found is uppercase.");
+```
+
+- Checks if the character's Unicode/ASCII value is between `'A'` (65) and `'Z'` (90).
+    
+- If yes, prints that it's an uppercase character.
+    
+
+> 🤓 **Note:** Characters in Java are internally stored as numbers (Unicode), so you can compare them like numbers!
+
+
+## 2. **## Check if Lowercase**
+
+```java
+if (characterFound >= 'a' && characterFound <= 'z')
+    System.out.println("The character found is lowercase.");
+```
+
+- Checks if the character's value is between `'a'` (97) and `'z'` (122).
+    
+- If true, prints that it's a lowercase character.
 
 ---
 
