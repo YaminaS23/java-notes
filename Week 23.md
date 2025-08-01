@@ -198,6 +198,87 @@ Enter first name, last name and age : Chris Cox 57
 Joy Mathew and Chris Cox are of the same generation.
 ```
 
+### 1️⃣ **Prompt for First Person's Details**
+
+```java
+System.out.print("Enter first name, last name and age : ");
+firstNameOne = scannedInfo.next();
+lastNameOne = scannedInfo.next();
+ageOne = scannedInfo.nextInt();
+```
+
+> **Note:**
+> 
+ - `.next()` reads the next word (so input must be in order: name, surname, age).
+>     
+ - `.nextInt()` reads the integer for age.
+>     
+
+---
+
+### 2️⃣  **Prompt for Second Person's Details**
+
+```java
+System.out.print("Enter first name, last name and age : ");
+firstNameTwo = scannedInfo.next();
+lastNameTwo = scannedInfo.next();
+ageTwo = scannedInfo.nextInt();
+```
+
+> **Note:**
+> 
+ - Same process as above for the second person.
+>     
+
+---
+
+### 3️⃣ **Calculate Age Difference**
+
+```java
+ageDifference = Math.abs(ageTwo - ageOne);
+```
+
+> **Note:**
+> 
+ - `Math.abs()` gives the absolute value (always positive).
+>     
+ - This prevents negative results if, say, person 1 is older.
+>     
+
+---
+
+### 4️⃣ **Print Both Names Together**
+
+```java
+System.out.print(firstNameOne + " " + lastNameOne + " and " +
+                 firstNameTwo + " " + lastNameTwo + " ");
+```
+
+> **Note:**
+> 
+ - Concatenates the names for the output message.
+>     
+
+---
+
+### 5️⃣ **Check Generation and Print Result**
+
+```java
+if (ageDifference <= 20)
+    System.out.println("are of the same generation.");
+else
+    System.out.println("are of different generations.");
+```
+
+> **Note:**
+> 
+ - If age difference is less than or equal to 20, they're considered the same generation (totally arbitrary but fun rule).
+>     
+ - Otherwise, they're from different generations.
+>     
+ - The `if-else` logic prints the appropriate message.
+>
+
 ---
 
 ## ✅ Example 2: Lexicographical Name Comparison
