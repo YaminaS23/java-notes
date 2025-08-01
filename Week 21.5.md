@@ -1,7 +1,7 @@
 
 
 
-# 📘 Java Method Definitions & Variables 
+# Java Method Definitions & Variables 
 
 ---
 
