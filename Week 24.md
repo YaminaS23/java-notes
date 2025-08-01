@@ -127,6 +127,10 @@ This allows you to:
 out.println("Hello World"); // instead of System.out.println()
 ```
 
+```java
+Scanner scanner = new Scanner(in); // No need for System.in
+```
+
 > 🧠 Pro Tip: Use this for cleaner code in long files, but avoid overusing for clarity's sake.
 
 > 🧠 This is a Java 5+ feature. Super useful in long code files.
