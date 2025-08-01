@@ -6,6 +6,7 @@ These notes are built in **Obsidian-style markdown** — clean, linked, organize
 
 ---
 
+
 ## 🌊 Why This Repo Exists
 
 Java is like the Grand Line of programming languages — huge, mysterious, sometimes terrifying, but also one of the most rewarding adventures in the programming world.
@@ -15,6 +16,7 @@ I'm learning Java as part of my Computer Science degree, and instead of letting 
 > Whether you're a beginner or someone who just wants to refresh the basics, you're welcome to sail along on this coding voyage.
 
 ---
+
 
 ## 📚 Books That Guide My Voyage (a.k.a. My Log Pose)
 
@@ -35,6 +37,7 @@ I'm learning Java as part of my Computer Science degree, and instead of letting 
    — A well-balanced, problem-solving focused book that makes you write code *and* understand what the heck you're doing. Solid CS fundamentals.
 
 ---
+
 
 ## 📂 What You'll Find Inside This Treasure Chest
 
@@ -57,6 +60,7 @@ I'm learning Java as part of my Computer Science degree, and instead of letting 
 
 ---
 
+
 ## 🌍 Quick Java Intro (in case you're just starting)
 
 Java is a powerful, object-oriented programming language developed by Sun Microsystems (now Oracle). It's used for building:
@@ -76,6 +80,7 @@ If you're new, Java is great because:
 
 ---
 
+
 ## 🔗 Useful Links for Every Nakama
 
 * [Official Java Documentation](https://docs.oracle.com/en/java/)
@@ -85,6 +90,7 @@ If you're new, Java is great because:
 
 ---
 
+
 ## 🎃 Final Words from the Deck
 
 This repo is for learners, dreamers, note-lovers, and future software pirates. If you find any typos or bugs, let me know or submit a pull request — collaboration makes the ship sail faster.
@@ -92,6 +98,7 @@ This repo is for learners, dreamers, note-lovers, and future software pirates. I
 Let’s level up together. From East Blue (basic syntax) to Wano (advanced OOP), one commit at a time.
 
 ---
+
 
 *Made with ☕️, late-night debug sessions, and the will of D.*
 
