@@ -16,7 +16,7 @@ This week introduces your **first working Java program**, breaking it down piece
 This is a simple Java program.
 Call this file "Example.java".
 */
-class Example {
+public class Example {
     // Your program begins with a call to main().
     public static void main(String[] args) {
         System.out.println("This is a simple Java program.");
@@ -87,7 +87,7 @@ Call this file "Example.java".
 ### 2. 📦 Class Declaration
 
 ```java
-class Example {
+public class Example {
     // ...
 }
 ```
