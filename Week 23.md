@@ -214,8 +214,6 @@ ageOne = scannedInfo.nextInt();
  - `.nextInt()` reads the integer for age.
 >     
 
----
-
 ### 2️⃣  **Prompt for Second Person's Details**
 
 ```java
@@ -230,8 +228,6 @@ ageTwo = scannedInfo.nextInt();
  - Same process as above for the second person.
 >     
 
----
-
 ### 3️⃣ **Calculate Age Difference**
 
 ```java
@@ -245,8 +241,6 @@ ageDifference = Math.abs(ageTwo - ageOne);
  - This prevents negative results if, say, person 1 is older.
 >     
 
----
-
 ### 4️⃣ **Print Both Names Together**
 
 ```java
@@ -258,8 +252,6 @@ System.out.print(firstNameOne + " " + lastNameOne + " and " +
 > 
  - Concatenates the names for the output message.
 >     
-
----
 
 ### 5️⃣ **Check Generation and Print Result**
 
