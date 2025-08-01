@@ -121,7 +121,7 @@ This allows you to:
 - Replace `System.in` with `in`
     
 
-🎯 Benefit:
+### 🎯 Benefit:
 
 ```java
 out.println("Hello World"); // instead of System.out.println()
