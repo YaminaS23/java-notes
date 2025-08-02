@@ -232,7 +232,6 @@ a: 1, c: 3
 
 > **All variables are set before any logic runs!**
 
----
 
 ### 2️⃣ **First** `if(i == 10)`
 
@@ -241,16 +240,12 @@ a: 1, c: 3
 - **Enters the first if block!**
     
 
----
-
 ### 3️⃣ **Second** `if(j < 20)`
 
 - Condition: `j < 20` → `15 < 20` → `true`
     
 - Runs `a = b;` → `a` now equals `1`.
     
-
----
 
 ### 4️⃣ **Third** `if(k > 100)` **with** `else`
 
@@ -263,14 +258,11 @@ a: 1, c: 3
 
 > ⚠️ **Java Rule:** The `else` matches with the closest previous unmatched `if` within the same block. Here, `else a = c;` matches with `if(k > 100)`, NOT `if(j < 20)`.
 
----
 
 ### 5️⃣ **The Outer** `else`
 
 - Not run! Because the first `if(i == 10)` was true, so `else a = d;` is IGNORED.
     
-
----
 
 ### 6️⃣ **Print Statement**
 
