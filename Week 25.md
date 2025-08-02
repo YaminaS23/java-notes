@@ -671,6 +671,7 @@ if (age >= 12 && age < 65) {
     
 - If you have a coupon: **get $2 off!**
 
+---
 
 ## 🧠 Deeper Nesting
 
@@ -679,19 +680,39 @@ Yes, you can nest infinitely (though **not recommended**).
 ### Example:
 
 ```java
-if (age >= 12 && age < 65) {
-    price = 9.25;
-    if (reply == 'Y' || reply == 'y') {
-        if (isSpecialFeature) {
-            price -= 1.00;
+if (age >= 12 && age < 65) {               // Outer if
+    price = 9.25;                          // Base adult price
+    if (reply == 'Y' || reply == 'y') {    // Nested if: Did they say yes?
+        if (isSpecialFeature) {            // Nested again
+            price -= 1.00;                 // Discount for special feature
         } else {
-            price -= 2.00;
+            price -= 2.00;                 // Bigger discount otherwise
         }
     }
-} else {
-    price = 5.25;
+} else {                                   // Outer else
+    price = 5.25;                          // Child/senior price
 }
 ```
+
+### **How this logic flows:**
+
+1. **First check:** Is the age 12 to 64 (inclusive)?
+    
+    - Yes → Base price is 9.25.
+        
+    - No → Price is 5.25. (Child/senior.)
+        
+2. If age was 12–64, **next check:** Did the user reply 'Y' or 'y'?
+    
+    - Yes → Continue, check next condition.
+        
+    - No → No further checks, price stays at 9.25.
+        
+3. If reply was yes, **final check:** Is it a special feature?
+    
+    - Yes → Discount by 1.00.
+        
+    - No → Discount by 2.00.
 
 ---
 
