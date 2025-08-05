@@ -253,6 +253,22 @@ Enter second number: 10
 The smaller number is: 5
 ```
 
+
+## **## Use the Ternary Operator to Find the Minimum**
+
+```java
+        int min = (num1 <= num2) ? num1 : num2;
+```
+
+- **Ternary Operator** syntax:  
+    `condition ? valueIfTrue : valueIfFalse;`
+    
+- Here:
+    
+    - Checks if `num1` is **less than or equal to** `num2`.
+        
+    - If true, `min` is set to `num1`. If false, `min` is set to `num2`.
+        
 ---
 
 ## 💡 Best Practices
