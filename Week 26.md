@@ -112,6 +112,55 @@ Absolute value of 10 is 10
 Absolute value of -10 is 10
 ```
 
+
+# 📝 **Step-by-Step Explanation**
+
+## 1️⃣  **Variable Declarations**
+
+- `int i, k;`
+    
+    - `i` will hold the test value.
+        
+    - `k` will hold the absolute value result.
+        
+
+## 2️⃣ **First Example: i = 10**
+
+```java
+i = 10;
+k = i < 0 ? -i : i; // get absolute value
+System.out.println("Absolute value of " + i + " is " + k);
+```
+
+- `i = 10;` assigns 10 to `i`.
+    
+- `k = i < 0 ? -i : i;`
+    
+    - Checks: **Is** `i` **less than 0?**
+        
+    - Since `10 < 0` is **false**, the result is the value after the colon (`i`), so `k = 10`.
+        
+- Prints: `Absolute value of 10 is 10`
+    
+
+## 3️⃣ **Second Example: i = -10**
+
+```java
+i = -10;
+k = i < 0 ? -i : i;
+System.out.println("Absolute value of " + i + " is " + k);
+```
+
+- `i = -10;` assigns -10 to `i`.
+    
+- `k = i < 0 ? -i : i;`
+    
+    - Checks: **Is** `i` **less than 0?**
+        
+    - Since `-10 < 0` is **true**, the result is the value after the question mark (`-i`), so `k = -(-10) = 10`.
+        
+- Prints: `Absolute value of -10 is 10`
+
 ---
 
 ## 🌐 Real-World Example: Divide Safely
