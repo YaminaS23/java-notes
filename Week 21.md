@@ -122,6 +122,26 @@ Ka D'Aargo
 
 ---
 
+## 🏷️ Core String Methods & Real-World Examples
+
+|Method|What it Does|Example Usage|Output|
+|---|---|---|---|
+|`length()`|Returns number of characters|`"hi ".length()`|3|
+|`charAt(idx)`|Returns character at given index|`"cat".charAt(2)`|'t'|
+|`indexOf(sub)`|Returns index of substring (first)|`"hello".indexOf("e")`|1|
+|`substring(start, end)`|Returns a substring|`"hello".substring(1,4)`|"ell"|
+|`toUpperCase()`|All uppercase letters|`"ok".toUpperCase()`|"OK"|
+|`toLowerCase()`|All lowercase letters|`"OK".toLowerCase()`|"ok"|
+|`equals(str)`|Checks if strings match (case)|`"Yes".equals("yes")`|false|
+|`equalsIgnoreCase(str)`|Checks if strings match (ignore case)|`"Yes".equalsIgnoreCase("yes")`|true|
+|`replace(a, b)`|Replaces all occurrences of a with b|`"abcabc".replace('a','x')`|"xbcxbc"|
+|`trim()`|Removes whitespace front & back|`" hi ".trim()`|"hi"|
+
+> ✅ **All methods work in Java 8 and newer (including Java 21).**
+
+---
+
+
 ## 📝 **String Processing Example**
 
 ### 🛠️ **Using multiple methods** (`substring()`, `toUpperCase()`)
