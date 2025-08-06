@@ -54,6 +54,15 @@ Answer length: 7
 
 ## 📍 **Index and Positions in Strings**
 
+- **Java strings are zero-indexed.**
+    
+    - First character = index 0
+        
+    - Last character = index `length() - 1`
+        
+- Spaces and symbols count too!
+
+
 > Indices in Java strings start from **0**.
 
 ```markdown
@@ -61,6 +70,9 @@ Answer length: 7
 Indices:  0  1  2  3  4  5
 Chars:    H  i     M  o  m
 ```
+
+> ⚠️ If you try `s.charAt(12)` here, Java will throw an **IndexOutOfBoundsException**.
+
 
 ### 🔸 **`indexOf()`**
 
