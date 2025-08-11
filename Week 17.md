@@ -114,21 +114,30 @@ public class Main {
     public static void main(String[] args) {
         int i = 10;
 
-        System.out.println(i++);  // prints 10, then i becomes 11
-        System.out.println(--i);  // i becomes 10, prints 10
-        --i;                      // i becomes 9
-        i--;                      // i becomes 8
+        System.out.println(i++);  // prints 10; i -> 11
+        System.out.println(--i);  // i -> 10; prints 10
+        --i;                      // i -> 9
+        i--;                      // i -> 8
         System.out.println(i);    // prints 8
-        System.out.println(++i);  // i becomes 9, prints 9
-        System.out.println(i--);  // prints 9, then i becomes 8
+        System.out.println(++i);  // i -> 9; prints 9
+        System.out.println(i--);  // prints 9; i -> 8
         System.out.println(i);    // prints 8
-        
-        i++;                      // i becomes 9
-        i = i++ + ++i;            // tricky part: evaluated left-to-right
-        System.out.println(i);    // prints 21
 
-        i = i++ + i++;            // 21 + 22 = 43, i becomes 23
-        System.out.println(i);    // prints 43
+        i++;                      // i -> 9
+
+        // Tricky #1
+        // Evaluate left operand first: (i++) yields 9, then i becomes 10
+        // Then right operand: (++i) makes i 11 and yields 11
+        // Sum = 9 + 11 = 20, then assign to i
+        i = i++ + ++i;            // i becomes 20
+        System.out.println(i);    // prints 20
+
+        // Tricky #2
+        // Left: (i++) yields 20, i -> 21
+        // Right: (i++) yields 21, i -> 22
+        // Sum = 20 + 21 = 41, then assign to i
+        i = i++ + i++;            // i becomes 41
+        System.out.println(i);    // prints 41
     }
 }
 ```
