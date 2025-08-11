@@ -98,6 +98,104 @@ Each kid gets 13 gumballs.
 
 > 💡 **Important**: Input order must match variable assignment!
 
+
+## 🧭 Step‑by‑Step Flow
+
+1. **Import** the Scanner class
+    
+
+```java
+import java.util.Scanner;
+```
+
+> Lets us read keyboard input from `System.in` token‑by‑token (e.g., integers, words).
+
+2. **Declare the class**
+    
+
+```java
+public class KeepingMoreKidsQuiet { ... }
+```
+
+> File name should match the public class: `KeepingMoreKidsQuiet.java`.
+
+3. **Entry point**
+    
+
+```java
+public static void main(String[] args) { ... }
+```
+
+> JVM starts executing from `main`.
+
+4. **Create a Scanner**
+    
+
+```java
+var keyboard = new Scanner(System.in);
+```
+
+> `var` infers type as `Scanner`. This reads from standard input (the keyboard).
+
+5. **Declare integer variables**
+    
+
+```java
+int gumballs;  // total number of gumballs available
+int kids;      // number of kids
+int gumballsPerKid; // result of division
+```
+
+> Using `int` means whole numbers only.
+
+6. **Prompt the user**
+    
+
+```java
+System.out.print("How many gumballs? How many kids? ");
+```
+
+> Single prompt requesting two integers typed on one line (e.g., `25 4`).
+
+7. **Read two integers**
+    
+
+```java
+gumballs = keyboard.nextInt();
+kids = keyboard.nextInt();
+```
+
+> `nextInt()` parses the next integer token separated by whitespace.
+
+8. **Compute integer division**
+    
+
+```java
+gumballsPerKid = gumballs / kids;
+```
+
+> This is **integer division**: any fractional part is **truncated** (not rounded). Example: `25 / 4` → `6` (not `6.25`).
+
+9. **Print the result**
+    
+
+```java
+System.out.print("Each kid gets ");
+System.out.print(gumballsPerKid);
+System.out.println(" gumballs.");
+```
+
+> Output is built in three pieces, ending with a newline.
+
+10. **Close the scanner**
+    
+
+```java
+keyboard.close();
+```
+
+> Releases the underlying input resource.
+
 ---
 
 ## 🔥 Make It & Break It Tests
