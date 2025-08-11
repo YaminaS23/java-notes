@@ -61,6 +61,23 @@ This is executed.
 10 > 9 is true
 ```
 
+## 🔹Execution trace (state → output)
+
+|Step|Code/Action|`b` value after step|Printed line|
+|---|---|---|---|
+|1|`boolean b;`|(unassigned)|—|
+|2|`b = false;`|`false`|—|
+|3|`println("b is " + b);`|`false`|**b is false**|
+|4|`b = true;`|`true`|—|
+|5|`println("b is " + b);`|`true`|**b is true**|
+|6|`if (b) println("This is executed.");`|`true`|**This is executed.**|
+|7|`b = false;`|`false`|—|
+|8|`if (b) println("This is not executed.");`|`false`|_(skipped)_|
+|9|`println("10 > 9 is " + (10 > 9));`|`false`|**10 > 9 is true**|
+
+> 📌 **Key idea:** An `if` runs its body **only when the condition is** `**true**`. No braces are used here because each `if` controls a single statement—but using braces is still a good habit.
+
+
 ### 💡 Observations:
 
 > ✅ You don’t need to use `if(b == true)`. Just use `if(b)`  
