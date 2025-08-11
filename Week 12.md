@@ -244,7 +244,7 @@ y mod 10 = 2.25
 ## 💼 Compound Assignment Operator Examples
 
 ```java
-class OpEquals {
+public class OpEquals {
     public static void main(String[] args) {
         int a = 1;
         int b = 2;
