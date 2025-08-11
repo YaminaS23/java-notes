@@ -255,6 +255,57 @@ Enter the garage price: $8.00
 Total with tip: $10.0
 ```
 
+## 🧠 Step-by-Step Explanation
+
+### 1) `import java.util.Scanner;`
+
+Brings the `Scanner` class into scope so we can read keyboard input from `System.in`.
+
+> Without this import, `Scanner` won’t be recognized by the compiler.
+
+### 2) `public class TipCalculator { ... }`
+
+Defines a public class named **TipCalculator**. In Java, the filename must match the public class name (so the file should be `TipCalculator.java`).
+
+### 3) `public static void main(String[] args) { ... }`
+
+This is the JVM entry point. When you run the program, execution starts here.
+
+- `public`: accessible by the JVM from anywhere
+    
+- `static`: no object needed to call `main`
+    
+- `void`: returns nothing
+    
+- `String[] args`: command-line arguments (unused here)
+    
+
+### 4) `Scanner input = new Scanner(System.in);`
+
+Creates a `Scanner` that reads tokens (numbers/words) from the **standard input stream** (keyboard).
+
+> ⚠️ Best practice: close it later with `input.close();` when done.
+
+### 5) `System.out.print("Enter the garage price: $");`
+
+Prompts the user **without** a newline, so the cursor stays on the same line waiting for input.
+
+### 6) `double price = input.nextDouble();`
+
+Reads the next numeric token as a `double`. If the user types `8.00` and presses Enter, `price` becomes `8.0`.
+
+> ⚠️ If the user types `$8.00` (with a dollar sign), `nextDouble()` will throw an `InputMismatchException`. Your prompt shows `$` so the **user should type only the number** (e.g., `8.00`).
+
+### 7) `double total = price + 2.00;`
+
+Simple arithmetic: add a fixed **2.00** tip to the base price. If `price = 8.0`, then `total = 10.0`.
+
+### 8) `System.out.println("Total with tip: $" + total);`
+
+Concatenates strings and the `double` value, then prints with a newline. Java converts the `double` to text using its default formatting.
+
+> 🤔 **Why** `10.0` **and not** `10.00`**?** Java’s default conversion prints the shortest representation. For currency, you usually want 2 decimals. See the improvement below.
+
 ---
 
 ## 🧮 DOUBLE PRICE (Challenge)
